@@ -225,22 +225,6 @@ Each project folder has its own `README.md` with details and findings.
 9. **Reading model results.** At first I did not question a 100% accuracy on 2 test samples, or a model that predicts from roll numbers.
 10. **Managing files.** My notebooks were spread across Downloads, two zip files and Colab, with generic names like `Untitled0.ipynb`, and some topics were only headings in a notebook.
 
-## Improvements I Made
-1. **Organised the repository by topic.** Notebooks are grouped into NumPy → Pandas → Statistics → EDA → Linear Regression → Logistic Regression → Projects.
-   Files have descriptive names, and every folder keeps its data in its own `datasets/` subfolder.
-2. **Made the notebooks portable.** I replaced Colab `/content/...` paths with relative `datasets/...` paths so every notebook runs anywhere.
-3. **Completed unfinished topics.** Pandas Day 2 (indexing and slicing, adding and modifying data, missing values, sorting and filtering),
-   the class notebook's correlation heatmap and Location vs Job Role countplot, and the normal-distribution section in Statistics were
-   only headings before. They now have full code and outputs.
-4. **Fixed bugs.** I corrected `plt.tittle` to `plt.title`, and fixed a cell that had been run out of order (`np.arange(0,742)` changed to `np.arange(0, len(df))`),
-   so **every notebook now runs from top to bottom**.
-5. **Wrote complete NumPy and Pandas reference notebooks.** They use data suited to each stage of the course: Iris for NumPy, and a messy
-   student-performance dataset for Pandas, so the Zomato data stays with its project.
-6. **Built the Titanic project into a full EDA.** It goes beyond `df.head()` with title-based imputation, feature engineering
-   (FamilySize, IsAlone, AgeGroup, FareBand, HasCabin), a correlation heatmap and a model-ready dataset evaluated against a baseline.
-7. **Improved how I evaluate models.** I now compare accuracy with a baseline, use stratified splits and confusion matrices, and check whether a feature makes sense.
-8. **Recreated the missing datasets** so nothing is left out of the repository (see the Datasets table).
-9. **Improved documentation.** Every directory and project now has an explanation, the key findings and what I learned.
 
 ---
 
